@@ -31,9 +31,6 @@ export default function App() {
       setNotDoneList([...notDoneList, item]);
     }
   };
-      console.log(notDoneList);
-      console.log(doneList);
-
   return (
     <div className="App">
       <div className="main_div">
@@ -73,7 +70,7 @@ export default function App() {
               >
                 {item.title}
 
-                <button onClick={() => editlist(item)}>make not done</button>
+                <button onClick={() => editlist(item)}>not mark</button>
               </div>
             ))}
           </div>
@@ -87,7 +84,7 @@ export default function App() {
               >
                 {item.title}
 
-                <button onClick={() => editlist(item)}>make done</button>
+                <button onClick={() => editlist(item)}>mark</button>
               </div>
             ))}
           </div>
